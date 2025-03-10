@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <center>
+        <h1>Puzzle Game</h1>
+
+        <div id="gameInfo">
+            <p id="stepCount">Steps: 0</p>
+            <p id="timeDisplay">Time: 0s</p>
+        </div>
+
+        <!-- Card wrapper around the table -->
+        <div class="card">
+            <div id="table" style="display: table;">
+                <div id="row1" style="display: table-row;">
+                    <div id="tile11" class="piece1" onclick="onTileClick(1, 1);"></div>
+                    <div id="tile12" class="piece2" onclick="onTileClick(1, 2);"></div>
+                    <div id="tile13" class="piece3" onclick="onTileClick(1, 3);"></div>
+                    <div id="tile14" class="piece4" onclick="onTileClick(1, 4);"></div>
+                </div>
+                <div id="row2" style="display: table-row;">
+                    <div id="tile21" class="piece5" onclick="onTileClick(2, 1);"></div>
+                    <div id="tile22" class="piece6" onclick="onTileClick(2, 2);"></div>
+                    <div id="tile23" class="piece7" onclick="onTileClick(2, 3);"></div>
+                    <div id="tile24" class="piece8" onclick="onTileClick(2, 4);"></div>
+                </div>
+                <div id="row3" style="display: table-row;">
+                    <div id="tile31" class="piece9" onclick="onTileClick(3, 1);"></div>
+                    <div id="tile32" class="piece10" onclick="onTileClick(3, 2);"></div>
+                    <div id="tile33" class="piece11" onclick="onTileClick(3, 3);"></div>
+                    <div id="tile34" class="piece12" onclick="onTileClick(3, 4);"></div>
+                </div>
+                <div id="row4" style="display: table-row;">
+                    <div id="tile41" class="piece13" onclick="onTileClick(4, 1);"></div>
+                    <div id="tile42" class="piece14" onclick="onTileClick(4, 2);"></div>
+                    <div id="tile43" class="piece15" onclick="onTileClick(4, 3);"></div>
+                    <div id="tile44" class="piece16" onclick="onTileClick(4, 4);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="shuffleTiles();">New Game</button>
+            <button onclick="startNewGame();">Sample Game</button>
+        </div>
+    </center>
+    <script src="index.js"></script>
+</body>
+</html>

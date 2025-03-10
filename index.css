@@ -1,0 +1,123 @@
+body {
+    background: #1a1a2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#gameInfo {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #e6e2e2;
+}
+
+.card {
+    background-color: #2d2d6f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.piece1, .piece2, .piece3, .piece4, 
+.piece5, .piece6, .piece7, .piece8, 
+.piece9, .piece10, .piece11, .piece12, 
+.piece13, .piece14, .piece15 {
+    display: table-cell;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #3d3b8e;
+    background-image: url(Images/num.png);
+    background-size: 360px 360px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.piece1 { background-position: 0px 0px; }
+.piece2 { background-position: -90px 0px; }
+.piece3 { background-position: -180px 0px; }
+.piece4 { background-position: -270px 0px; }
+
+.piece5 { background-position: 0px -90px; }
+.piece6 { background-position: -90px -90px; }
+.piece7 { background-position: -180px -90px; }
+.piece8 { background-position: -270px -90px; }
+
+.piece9 { background-position: 0px -180px; }
+.piece10 { background-position: -90px -180px; }
+.piece11 { background-position: -180px -180px; }
+.piece12 { background-position: -270px -180px; }
+
+.piece13 { background-position: 0px -270px; }
+.piece14 { background-position: -90px -270px; }
+.piece15 { background-position: -180px -270px; }
+
+.piece16 {
+    width: 90px;
+    height: 90px;
+    background: rgb(6, 20, 32);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: default;
+}
+
+.piece1, .piece2, .piece3, .piece4, 
+.piece5, .piece6, .piece7, .piece8, 
+.piece9, .piece10, .piece11, .piece12, 
+.piece13, .piece14, .piece15, .piece16 {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.piece1:hover, .piece2:hover, .piece3:hover, .piece4:hover, 
+.piece5:hover, .piece6:hover, .piece7:hover, .piece8:hover, 
+.piece9:hover, .piece10:hover, .piece11:hover, .piece12:hover, 
+.piece13:hover, .piece14:hover, .piece15:hover, .piece16:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #3d3b8e;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
